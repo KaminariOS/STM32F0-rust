@@ -39,9 +39,11 @@ devShell = pkgs.mkShell rec {
     "fortify"
   ];
   nativeBuildInputs = [
-        pinnedRust cargoExpand
+    pinnedRust 
+    # cargoExpand
       ] ++ (with pkgs; [
-        gdb openocd
+        gdb 
+        openocd
         cargo-generate
         usbutils
       ]);
